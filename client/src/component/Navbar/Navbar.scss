@@ -1,0 +1,39 @@
+.navbar{
+    height: 80px;
+
+    
+    .wrapper{
+        padding: 10px 30px;
+        display: flex;
+        justify-content: space-between;
+
+        .left{
+            font-size: 45px;
+            letter-spacing: 3px;
+        }
+
+       .right{
+            display: flex;
+            gap: 50px;
+            cursor: pointer;
+
+            .cart{
+                position: relative;
+                span{
+                    font-size: 12px;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    background-color: rgb(0, 170, 255);
+                    position: absolute;
+                    top: -10px;
+                    right: -10px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                }
+            }
+        }
+    }
+}
