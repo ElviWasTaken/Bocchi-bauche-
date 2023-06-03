@@ -14,21 +14,21 @@ export const Navbar = () => {
     <div className="navbar">
       <div className="wrapper">
         <div className="left">
-          <div class="name">
+          <div className="name">
             <Link className="link" to="/">Bocchi</Link>
           </div>
         </div>
         <div className="center">
-          <div class="icon">
+          <div className="icon">
             <SearchIcon />
           </div>
         </div>
         <div className="right">
-          <div class="cartIcon" onClick={()=>SetOpen(!open)}>
+          <div className="cartIcon" onClick={()=>SetOpen(!open)}>
             <ShoppingCartIcon />
             <span>0</span>
           </div>
-          <div class="user">
+          <div className="user">
             <PersonIcon />
           </div>
         </div>
