@@ -6,9 +6,13 @@ import PersonIcon from '@mui/icons-material/Person';
 import { Link, NavLink } from "react-router-dom"
 import "./Navbar.scss"
 import Cart from '../Cart/Cart';
+import { useSelector } from "react-redux"
 
 export const Navbar = () => {
+
   const [open,SetOpen] = useState(false)
+  const products = useSelector(state => state.cart.products)
+
 
   return (
     <div className="navbar">
@@ -26,7 +30,7 @@ export const Navbar = () => {
         <div className="right">
           <div className="cartIcon" onClick={()=>SetOpen(!open)}>
             <ShoppingCartIcon />
-            <span>0</span>
+            <span>{products.lenght}</span>
           </div>
           <div className="user">
             <PersonIcon />
